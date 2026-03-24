@@ -1,13 +1,15 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Layout } from '@/components/Layout'
+import { Home } from '@/pages/Home'
+import { Templates } from '@/pages/Templates'
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route element={<Layout />}>
-          <Route path="/" element={<div>Home</div>} />
-          <Route path="/templates" element={<div>Templates</div>} />
+          <Route path="/" element={<Home />} />
+          <Route path="/templates" element={<Templates />} />
           <Route path="/templates/:id" element={<div>Template Detail</div>} />
           <Route path="/advisor" element={<div>Advisor</div>} />
         </Route>
