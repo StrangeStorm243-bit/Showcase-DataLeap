@@ -1,6 +1,10 @@
 import { Outlet, Link } from 'react-router-dom'
+import { useState } from 'react'
+import { Menu, X } from 'lucide-react'
 
 export function Layout() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
   return (
     <div className="min-h-screen bg-zinc-950 text-zinc-50">
       <header className="border-b border-zinc-800">
@@ -8,7 +12,9 @@ export function Layout() {
           <Link to="/" className="text-lg font-semibold tracking-tight">
             Dataleap Quickstart Hub
           </Link>
-          <div className="flex items-center gap-6">
+
+          {/* Desktop nav */}
+          <div className="hidden md:flex items-center gap-6">
             <Link to="/templates" className="text-sm text-zinc-400 hover:text-zinc-50 transition-colors">
               Templates
             </Link>
@@ -24,7 +30,43 @@ export function Layout() {
               Try Dataleap
             </a>
           </div>
+
+          {/* Mobile menu button */}
+          <button
+            className="md:hidden p-2 text-zinc-400 hover:text-zinc-50"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
         </nav>
+
+        {/* Mobile menu */}
+        {mobileMenuOpen && (
+          <div className="md:hidden border-t border-zinc-800 px-4 py-4 space-y-3">
+            <Link
+              to="/templates"
+              className="block text-sm text-zinc-400 hover:text-zinc-50 transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Templates
+            </Link>
+            <Link
+              to="/advisor"
+              className="block text-sm text-zinc-400 hover:text-zinc-50 transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Advisor
+            </Link>
+            <a
+              href="https://dataleap.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block text-sm bg-indigo-600 hover:bg-indigo-500 px-4 py-2 rounded-lg transition-colors text-center"
+            >
+              Try Dataleap
+            </a>
+          </div>
+        )}
       </header>
       <main>
         <Outlet />
