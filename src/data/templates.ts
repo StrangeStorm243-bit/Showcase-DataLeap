@@ -420,7 +420,7 @@ Post a Slack message to #engineering:
 **"PR Review Digest — [Date]"**
 - **Summary:** "X PRs open. Y need first review. Z are stale."
 - **Needs First Review:**
-  Each PR as: `[Repo] PR Title` by @author — opened [X hours ago] — [+additions/-deletions] — CI: [status]. Requested reviewers: @names.
+  Each PR as: '[Repo] PR Title' by @author — opened [X hours ago] — [+additions/-deletions] — CI: [status]. Requested reviewers: @names.
 - **Changes Requested:**
   Each PR with: who requested changes and when.
 - **Ready to Merge:**
