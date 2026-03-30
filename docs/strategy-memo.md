@@ -38,9 +38,7 @@ Every SaaS company's growth bottleneck is activation — turning signups into en
 
 ---
 
-## 6-Month Growth Playbook
-
-### Month 1-2: Foundation
+## Growth Playbook: 6 Experiments, Prioritized
 
 **Experiment 1: Agent Template Gallery (SEO + Activation)**
 Build a public, searchable template library organized by role and use case. Each template includes copy-paste agent instructions, estimated time saved, and required tools.
@@ -63,8 +61,6 @@ A Dataleap agent that greets new signups, asks about their role, and recommends 
 - *How:* Webhook-triggered agent on signup. I built a prototype on the platform.
 - *Metric:* First-agent completion rate within 24 hours of signup.
 
-### Month 3-4: Amplification
-
 **Experiment 4: "Agent of the Week" Content Series**
 Weekly showcase of a real customer's agent — what it does, how they built it, time saved. Distributed across LinkedIn, Twitter, newsletter, and the template gallery.
 
@@ -76,8 +72,6 @@ Let users publish their own agent templates to the gallery. Add clone counts, ra
 
 - *Why:* Notion's user-generated template ecosystem drives 95% organic traffic and spawned a creator economy on Gumroad. Same flywheel applies here.
 - *Metric:* User-submitted templates per month, clone-to-signup conversion.
-
-### Month 5-6: Scale
 
 **Experiment 6: Programmatic SEO at Scale**
 Generate landing pages for every combination of role x use case x integration (e.g., "AI sales agent for HubSpot users," "Automate Slack notifications for engineering teams").
