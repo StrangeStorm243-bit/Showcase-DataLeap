@@ -1,7 +1,6 @@
 # Dataleap Growth Playbook: From 4 People to Market Leader
 
 **By Niran | Chief of Staff Application**
-**March 2026**
 
 ---
 
